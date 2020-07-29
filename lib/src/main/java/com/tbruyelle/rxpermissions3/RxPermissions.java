@@ -75,7 +75,7 @@ public class RxPermissions {
             fragmentManager
                     .beginTransaction()
                     .add(rxPermissionsFragment, TAG)
-                    .commitNow();
+                    .commitNowAllowingStateLoss();
         }
         return rxPermissionsFragment;
     }
